@@ -1,0 +1,18 @@
+---
+const { videoid, tiktokUser } = Astro.props;
+---
+
+<blockquote
+  class="tiktok-embed"
+  cite=`https://www.tiktok.com/${tiktokUser}/video/${videoid}`
+  data-video-id={videoid}
+  style="max-width: 605px;min-width: 325px;height: 100%"
+>
+  <section>
+    <a
+      target="_blank"
+      title={tiktokUser}
+      href=`https://www.tiktok.com/${tiktokUser}?refer=embed`>{tiktokUser}</a
+    >
+  </section>
+</blockquote>

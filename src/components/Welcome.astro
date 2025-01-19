@@ -1,0 +1,126 @@
+---
+import Twitter from "../icons/Twitter.astro";
+import Instagram from "../icons/Instagram.astro";
+import Photoshop from "../icons/Photoshop.astro";
+import Premiere from "../icons/Premiere.astro";
+import TikTok from "../icons/TikTok.astro";
+import Vegas from "../icons/Vegas.astro";
+import ListaVideosYouTube from "./ListaVideosYouTube.astro";
+import Creador from "./Creador.astro";
+import ListaVideosTikTok from "./ListaVideosTikTok.astro";
+import Capcut from "../icons/Capcut.astro";
+import Gmail from "../icons/Gmail.astro";
+---
+
+<header class="py-20 text-center text-white">
+  <div class="mx-auto max-w-4xl">
+    <img
+      src="foto_perfil.webp"
+      alt="Tomás Ávalos"
+      class="mx-auto mb-6 h-40 w-40 rounded-full shadow-lg object-cover"
+    />
+    <h1 class="text-4xl font-bold">Tomás Avalos</h1>
+    <p class="mt-2 text-xl">Editor de videos</p>
+    <p class="mt-4 text-gray-400 flex gap-x-4 justify-center">
+      <a
+        href="https://x.com/Tomaspuechamig0"
+        class="text-gray-400 hover:text-white"
+        target="_blank"
+      >
+        <Twitter class="size-6 transition-transform hover:scale-110" />
+      </a>
+      <a
+        href="https://www.instagram.com/tomaspuechamig0/"
+        class="text-gray-400 hover:text-white"
+        target="_blank"
+      >
+        <Instagram class="size-6 transition-transform hover:scale-110" />
+      </a>
+
+      <a
+        href="https://www.tiktok.com/@tomaspuechamigo"
+        class="text-gray-400 hover:text-white"
+        target="_blank"
+      >
+        <TikTok class="size-6 transition-transform hover:scale-110" />
+      </a>
+
+      <a
+        href="mailto:tomassunich22@gmail.com"
+        class="text-gray-400 hover:text-white"
+        target="_blank"
+      >
+        <Gmail class="size-6 transition-transform hover:scale-110" />
+      </a>
+    </p>
+  </div>
+</header>
+
+<!-- Sección de Videos -->
+<section class="py-16">
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="mb-8 text-center text-3xl font-bold text-white">
+      Proyectos Destacados
+    </h2>
+
+    <ListaVideosYouTube />
+    <ListaVideosTikTok />
+  </div>
+</section>
+
+<!-- Sección de Creadores de Contenido -->
+<section class="py-16">
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="mb-8 text-center text-3xl font-bold text-white">
+      Creadores con los que he trabajado
+    </h2>
+    <div class="grid grid-cols-2 gap-8 text-center auto-rows-fr md:grid-cols-3">
+      <Creador
+        nombre="Necko"
+        imagen="necko.jpg"
+        url="https://www.youtube.com/@Neckolol"
+      />
+      <Creador
+        nombre="Liski"
+        imagen="liski.jpg"
+        url="https://www.youtube.com/@liskioka"
+      />
+      <Creador
+        nombre="Otpstuckeado"
+        imagen="otpstuckeado.jpg"
+        url="https://www.youtube.com/@Otpstuckeado"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Sobre mí -->
+<section class="py-16">
+  <div class="mx-auto max-w-4xl px-6 text-center flex flex-col gap-y-2">
+    <h2 class="mb-8 text-3xl font-bold text-white">Sobre mí</h2>
+    <p class="leading-relaxed text-white">
+      Soy Tomás Avalos, un apasionado editor de videos con experiencia en la
+      edición de contenido para YouTube, TikTok y otras plataformas. Me
+      especializo en crear videos dinámicos y de alta calidad que capturan la
+      esencia de los creadores y conectan con sus audiencias.
+    </p>
+    <p class="leading-relaxed text-white">
+      Mi stack de aplicaciones para trabajar:
+    </p>
+    <article class="flex gap-x-4 justify-center">
+      <Photoshop class="size-8" />
+      <Premiere class="size-8" />
+      <Capcut class="size-8" />
+      <Vegas class="size-8" />
+    </article>
+  </div>
+</section>
+
+<!-- Links a Redes Sociales -->
+<footer class="py-8 text-white">
+  <div class="mx-auto max-w-4xl text-center">
+    <p class="text-gray-600">
+      © 2025 Tomás Avalos. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
